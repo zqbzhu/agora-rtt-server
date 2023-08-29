@@ -75,6 +75,7 @@ public class RttTask {
             if (response.isSuccessful()) {
                 // Save the builder token and return Success
                 builderToken = jsonObject.getString("tokenName");
+                System.out.println("token:"+status);
                 return RttResult.SUCCESS;
             } else {
                 // Failed to fetch a builder token
